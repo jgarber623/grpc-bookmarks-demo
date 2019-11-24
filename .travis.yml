@@ -1,0 +1,14 @@
+language: ruby
+cache:
+  - bundler
+before_script:
+  - gem update --system
+  - bin/setup
+  - bin/rails db:seed
+script:
+  - bin/rake rubocop
+notifications:
+  email: false
+  slack:
+    rooms:
+      secure: mDWhhiWo14C6njjNi8hVAvw6zZLgSN6LoL86rDxIWUQHz76R0q9gJlcJi1pr+8nutR65Zj4KBqyIh6uunrhHQQCoXxyIg85xZ97eMMYsqSLc/KnTlPbE4FtdfRp+PSajYKY+mbeyazEi3PdpnVGrneBWxHfNbrI6KWxM2fHsI7Ga5Jkyb6KRLQg9w3lFIuoMP14qmDD3VqyhElpz/kUWuwpQNzsOKgc99jVmCtQr8tGWvcMS9dfpQIq+3JQVhvojcO9SKiCon3M3l+nDTw4KuirnkGXDv6V+GveqmPtTzYPH+YNdhQvmu3dXVmdYj8fvsaRz5WMvppwFYrihFOuchogQq/8WpUNf8POY968vtIx2OLzIJ6UraHxoJtjIvJT0mmNiM3p7l3RN0XfKyOeo6PYZCYTu3aoY376uaEd0BZ5ol4jMI4VKNyVQjrDzZTg5VHTWMMT87a7NNcPR1Lmm5GkVboZGBSC4nNGCttGcAWsuGOOdHA+LMcl+e0qPZ+gAJkm4cdKLu83XyTUpkwNPyRg6oZZB1bvZN0cIMb9KQBoaq+OO+hp9qbvKJsJZCR5vUskSAB1CmZYHQY+lOWLDp+v/vJuWEy9avKjFqHfstz16wBBepoERTx2vNQZ78g5/G1tjvplaib/EgITzw4UJuNVu+88y1vPTUZ0+qr63Z9A=
