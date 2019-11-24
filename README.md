@@ -4,6 +4,8 @@
 
 [![Build](https://img.shields.io/travis/com/jgarber623/grpc-bookmarks-demo/master.svg?style=for-the-badge)](https://travis-ci.com/jgarber623/grpc-bookmarks-demo)
 [![Dependencies](https://img.shields.io/depfu/jgarber623/grpc-bookmarks-demo.svg?style=for-the-badge)](https://depfu.com/github/jgarber623/grpc-bookmarks-demo)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability/jgarber623/grpc-bookmarks-demo.svg?style=for-the-badge)](https://codeclimate.com/github/jgarber623/grpc-bookmarks-demo)
+[![Coverage](https://img.shields.io/codeclimate/c/jgarber623/grpc-bookmarks-demo.svg?style=for-the-badge)](https://codeclimate.com/github/jgarber623/grpc-bookmarks-demo/code)
 
 ## Getting Started
 
