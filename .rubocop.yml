@@ -6,6 +6,7 @@ AllCops:
   Exclude:
     - app/rpc/definitions/**/*.rb
     - db/schema.rb
+    - vendor/**/*
 
 Metrics/LineLength:
   Enabled: false
