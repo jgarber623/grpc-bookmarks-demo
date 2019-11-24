@@ -2,6 +2,11 @@ require:
   - rubocop-performance
   - rubocop-rails
 
+AllCops:
+  Exclude:
+    - app/rpc/definitions/**/*.rb
+    - db/schema.rb
+
 Metrics/LineLength:
   Enabled: false
 
