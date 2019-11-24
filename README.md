@@ -2,6 +2,7 @@
 
 **A [Ruby on Rails](https://rubyonrails.org) application demonstrating an API served using [gRPC](https://grpc.io) and [Protocol Buffers](https://developers.google.com/protocol-buffers).**
 
+[![Build](https://img.shields.io/travis/com/jgarber623/grpc-bookmarks-demo/master.svg?style=for-the-badge)](https://travis-ci.com/jgarber623/grpc-bookmarks-demo)
 [![Dependencies](https://img.shields.io/depfu/jgarber623/grpc-bookmarks-demo.svg?style=for-the-badge)](https://depfu.com/github/jgarber623/grpc-bookmarks-demo)
 
 ## Getting Started
