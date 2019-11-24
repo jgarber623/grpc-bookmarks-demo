@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package rpc;
+
+import "google/protobuf/timestamp.proto";
+
+service Bookmarks {
+  rpc GetBookmark(GetBookmarkRequest) returns (Bookmark);
+  rpc ListBookmarks(ListBookmarksRequest) returns (stream Bookmark);
+}
+
+message Bookmark {
+  uint64 id = 1;
+  string bookmarked_url = 2;
+  string canonical_url = 3;
+  string archive_org_snapshot_url = 4;
+  string initial_http_status_code = 5;
+  string final_http_status_code = 6;
+  string note = 7;
+  google.protobuf.Timestamp created_at = 8;
+}
+
+message GetBookmarkRequest {
+  uint64 id = 1;
+}
+
+message ListBookmarksRequest {
+  uint64 limit = 1;
+  uint64 offset = 2;
+}
