@@ -5,7 +5,7 @@ namespace :protos do
   output_path = './app/rpc/definitions'
 
   desc "Compile *.proto files in #{input_path}"
-  task :compile do
+  task compile: :environment do
     FileUtils.mkdir_p(output_path) unless File.exist?(output_path)
 
     Dir[File.join(input_path, '**', '*.proto')].each do |proto_path|

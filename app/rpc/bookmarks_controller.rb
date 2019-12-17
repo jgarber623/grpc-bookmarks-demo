@@ -8,9 +8,10 @@ class BookmarksController < Gruf::Controllers::Base
   end
 
   def list_bookmarks
-    limit = request.message.limit.positive? ? request.message.limit : 100
+    message = request.message
+    limit = message.limit.positive? ? message.limit : 100
 
-    bookmarks.limit(limit).offset(request.message.offset).map(&:to_proto)
+    bookmarks.limit(limit).offset(message.offset).map(&:to_proto)
   end
 
   private

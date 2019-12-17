@@ -25,7 +25,7 @@ module GrpcBookmarksDemo
     config.load_defaults 6.0
 
     # Add autoload paths for gRPC services
-    config.autoload_paths += [Rails.root.join('app', 'rpc', 'definitions')]
+    config.autoload_paths += [Rails.root.join('app/rpc/definitions')]
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

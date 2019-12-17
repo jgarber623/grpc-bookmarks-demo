@@ -8,7 +8,7 @@
 
 require 'csv'
 
-rows = CSV.read(Rails.root.join('db', 'seeds', 'bookmarks.csv'), headers: true)
+rows = CSV.read(Rails.root.join('db/seeds/bookmarks.csv'), headers: true)
 
 rows.each do |row|
   Bookmark.create(
