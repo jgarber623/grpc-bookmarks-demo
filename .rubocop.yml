@@ -1,6 +1,7 @@
 require:
   - rubocop-performance
   - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   Exclude:
@@ -10,6 +11,13 @@ AllCops:
 
 Metrics/LineLength:
   Enabled: false
+
+Naming/AccessorMethodName:
+  Exclude:
+    - app/rpc/*_controller.rb
+
+RSpec/MultipleExpectations:
+  Max: 2
 
 Style/Documentation:
   Enabled: false
