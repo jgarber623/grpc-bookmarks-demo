@@ -10,7 +10,7 @@ gem 'sqlite3', '~> 1.4'
 
 group :development, :test do
   gem 'factory_bot_rails', '~> 5.1'
-  gem 'gruf-rspec', '~> 0.1.3'
+  gem 'gruf-rspec', '~> 0.2.0'
   gem 'reek', '~> 5.5', require: false
   gem 'rspec', '~> 3.9'
   gem 'rspec-rails', '~> 3.9'
