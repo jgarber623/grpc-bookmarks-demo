@@ -9,7 +9,7 @@ AllCops:
     - db/schema.rb
     - vendor/**/*
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: false
 
 Naming/AccessorMethodName:
