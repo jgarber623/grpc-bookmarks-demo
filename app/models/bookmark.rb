@@ -8,7 +8,7 @@ class Bookmark < ApplicationRecord
       initial_http_status_code: initial_http_status_code,
       final_http_status_code: final_http_status_code,
       note: note,
-      created_at: created_at.to_time
+      created_at: created_at.utc
     )
   end
 end
