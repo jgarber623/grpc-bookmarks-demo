@@ -16,6 +16,9 @@ Naming/AccessorMethodName:
   Exclude:
     - app/rpc/*_controller.rb
 
+Naming/RescuedExceptionsVariableName:
+  PreferredName: exception
+
 RSpec/MultipleExpectations:
   Max: 2
 
