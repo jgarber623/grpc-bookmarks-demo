@@ -21,7 +21,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'pry-byebug', '~> 3.7'
+  gem 'pry-byebug', '~> 3.8'
   gem 'pry-rails', '~> 0.3.9'
 end
 
