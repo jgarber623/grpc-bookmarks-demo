@@ -106,7 +106,6 @@ GEM
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     jaro_winkler (1.5.4)
-    json (2.3.0)
     kwalify (0.7.2)
     loofah (2.4.0)
       crass (~> 1.0.2)
@@ -211,15 +210,14 @@ GEM
     rubocop-rspec (1.37.1)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
-    simplecov (0.17.1)
+    simplecov (0.18.0)
       docile (~> 1.1)
-      json (>= 1.8, < 3)
-      simplecov-html (~> 0.10.0)
+      simplecov-html (~> 0.11.0)
     simplecov-console (0.6.0)
       ansi
       simplecov
       terminal-table
-    simplecov-html (0.10.2)
+    simplecov-html (0.11.0)
     slop (4.8.0)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
@@ -265,7 +263,7 @@ DEPENDENCIES
   rubocop-performance (~> 1.5)
   rubocop-rails (~> 2.4)
   rubocop-rspec (~> 1.36)
-  simplecov (~> 0.17.1)
+  simplecov (~> 0.18.0)
   simplecov-console (~> 0.6.0)
   sqlite3 (~> 1.4)
 
